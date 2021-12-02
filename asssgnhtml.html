@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+ <style>
+input[type=text], select, textarea {
+    width: 10%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+
+background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+    body{
+      background-color:rgb(139, 157, 165);
+    }
+  
+  </style>
+  <script>function validation(){
+    alert(document.getElementsByName("User info")[0].value);
+    if(name==""||name==null){
+      alert("please enter a name");
+      return false;
+    }else{
+      return true;
+    
+    }
+  }</script>
+  <style>input[type=text], select, textarea {
+    width: 20%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  </style>
+
+  
+<body>
+   
+<center>
+  <head><h1>Activity Page</h1></head>
+  
+</center>
+  <lable id="User info">Activity Name</lable><br>
+  <div>    <input type="text" width="30%" name="User info"><br>
+  </div>
+  <br></br>
+
+
+  <label>Activity Id</label><br>
+  <input type="text" align="right"><br>
+  <br></br>
+
+ <label>Assigning of the task</label><br>
+   
+   <textarea id="subject" alig="right" name="subject" placeholder="Description of task" style="height:100px"></textarea>
+<br></br>
+
+     <label>Prioritise</label><br>
+    <select>
+        <option>HTML</option>
+        <option>Css</option>
+        <option>Java script</option>
+    </select><br>
+    <label>Notes</label><br>
+    <input type="file" data="top"><br>
+<br></br>  
+  
+    <label>Activity start Date</label><br>
+    <input type='date'><br>
+    <br></br>
+  
+    <label>Activity End Dtae</label><br>
+    <input type='date'><br>
+    <br></br>
+
+  <label >Activity Status</label><br>
+  <select aria-placeholder="selcet progress"><br>
+      <option >In the starting phase</option>
+      <option>Intermediate</option>
+      <option>Final stage</option>
+  </select><br>
+  <br></br>
+  
+  <button onclick="validation()">submit</button><br />
+  
+
+</body>
+</html>
